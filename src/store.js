@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 import rootReducer from './Reducers/index';
 
 const initialState = {
-    // Create your state tree structure here
+    collections: [],
 }
 
 const middleware = [thunk]

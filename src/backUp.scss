@@ -1,0 +1,95 @@
+
+
+/* nav{
+    position: fixed;
+    top:100px;
+} */
+
+/* .content{
+    margin-top: 250px;
+} */
+
+
+h2{
+	font-family: sans-serif;
+    letter-spacing: 0px;
+    font-size: 22px;
+	padding-bottom: 12px;
+	font-weight: 300;
+}
+ 
+.searchSection{
+    display: none;
+} 
+
+.searchResults, .myCollections{
+    padding: 0px;
+    justify-content: space-evenly;
+    padding-bottom: 24px;
+    div{
+        padding-bottom: 50px;
+    }
+}
+.resto, .collection{
+    margin : 0rem 1rem 2.5rem;
+}
+
+.noResults{
+    font-family: monospace;
+    font-style: oblique;
+    font-size: 32px;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+.myCollection{
+    font-family: cursive;
+    color: black;
+    font-size: 24px;
+    font-style: oblique;
+    padding: 65px;
+    border: 2px brown;
+    border-style: groove;
+    border-radius: 20px;
+    background-color: cornsilk;
+    position: relative;
+}
+.delete{
+    margin-top: 25px;
+    width: 60%;
+    text-align: center;
+}
+footer{
+	width: 100%;
+	background-color: black;
+	color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: serif;
+    font-size: 0.7rem;
+    padding: 2rem;
+}
+footer {
+    a{
+    color: white;
+    padding-left: 7%;
+}
+}
+.social:hover{
+    text-decoration: none;
+}
+#facebook:hover{
+	color: #3B5998;
+}
+#twitter:hover{
+	color: #1dcaff;
+}
+#linkedIn:hover{
+	color: #0077B5;
+}
+#google:hover{
+	color: #F85C5C;
+}
+#quora:hover{
+	color: #AA2200;
+}

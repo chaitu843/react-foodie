@@ -1,1 +1,1 @@
-// Define your action types as constant and just export them from here
+export const FETCH_COLLECTIONS = "FETCH_COLLECTIONS";
