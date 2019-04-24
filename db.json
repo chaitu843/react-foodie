@@ -1,24 +1,35 @@
 {
-  "favorites": [
+  "favoriteCollections": [
     {
-      "collection_id": 41,
-      "res_count": 12,
-      "image_url": "https://b.zmtcdn.com/data/collections/d0a0e32df636a9dfbf850f13a38aa834_1446629668_l.jpg",
-      "url": "https://www.zomato.com/bangalore/craft-beer?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
-      "title": "Craft Beer",
-      "description": "The best house brews in town",
-      "share_url": "http://www.zoma.to/c-280/41",
+      "collection_id": 1,
+      "res_count": 30,
+      "image_url": "https://b.zmtcdn.com/data/collections/b53772a204429cb9b42313d6dc22bf3c_1556018415.jpg",
+      "url": "https://www.zomato.com/bangalore/top-restaurants?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+      "title": "Trending This Week",
+      "description": "Most popular restaurants in town this week",
+      "share_url": "http://www.zoma.to/c-4/1",
       "id": 1
     },
     {
-      "collection_id": 35,
-      "res_count": 15,
-      "image_url": "https://b.zmtcdn.com/data/collections/b5a5caace052be929d9829d32ae1c591_1441697242_l.jpg",
-      "url": "https://www.zomato.com/bangalore/ramen-restaurants?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
-      "title": "Ramen",
-      "description": "The city's best ramen, and more!",
-      "share_url": "http://www.zoma.to/c-280/35",
+      "collection_id": 74045,
+      "res_count": 34,
+      "image_url": "https://b.zmtcdn.com/data/collections/d934e8b69565967c2b69639134c8e740_1456904638.jpg",
+      "url": "https://www.zomato.com/bangalore/corporate-favorites?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+      "title": "Corporate Favorites",
+      "description": "Here are some of the best restaurants in your city that are offering up even better corporate deals ",
+      "share_url": "http://www.zoma.to/c-4/74045",
       "id": 2
+    },
+    {
+      "collection_id": 274852,
+      "res_count": 223,
+      "image_url": "https://b.zmtcdn.com/data/collections/53be5a745e959a8f6c51c52dd3d9edd1_1536825795.jpg",
+      "url": "https://www.zomato.com/bangalore/great-food-no-bull?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+      "title": "Bengaluru's Finest ",
+      "description": "The hunt for the highest-rated restaurants in your city ends here",
+      "share_url": "http://www.zoma.to/c-4/274852",
+      "id": 3
     }
-  ]
+  ],
+  "favoriteRestaurants": []
 }

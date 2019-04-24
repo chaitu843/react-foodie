@@ -12,7 +12,8 @@ import Nav from '../Nav/Nav';
 import RecommendedSection from '../RecommendedSection/RecommendedSection';
 import FavoritesSection from '../FavoritesSection/FavoritesSection';
 import SearchSection from '../SearchSection/SearchSection';
-
+import RestaurantsSection from '../RestaurantsSection/RestaurantsSection';
+import FavoriteRestaurantsSection from '../FavoriteRestaurantsSection/FavoriteRestaurantsSection';
 
 class App extends Component {
 
@@ -25,7 +26,9 @@ class App extends Component {
             <Nav />
             <div className="mx-5">
               <FavoritesSection />
+              <FavoriteRestaurantsSection />
               <RecommendedSection />
+              <RestaurantsSection />
               <SearchSection />
             </div>
           </div>

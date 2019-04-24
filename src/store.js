@@ -5,7 +5,10 @@ import rootReducer from './Reducers/index';
 
 const initialState = {
     collections: [],
-    favorites: []
+    restaurants: [],
+    favoriteCollections: [],
+    favoriteRestaurants: [],
+    searchResults: []
 }
 
 const middleware = [thunk]

@@ -5,7 +5,7 @@ export default (state = [], action) => {
         case FETCH_FAVORITE_COLLECTIONS:
             return [
                 ...state,
-                ...action.favorites
+                ...action.favoriteCollections
             ]
         case ADD_FAVORITE_COLLECTION:
             return [

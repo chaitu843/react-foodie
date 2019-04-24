@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 
-import {addFavorite, deleteFavorite} from '../../Actions/actions';
+import {addFavoriteCollection, deleteFavoriteCollection} from '../../Actions/actions';
 
 import './collectionCard.css';
 
 class CollectionCard extends Component {
 
     addToFavorite = () => {
-        let duplicate = this.props.favorites.find(fav => fav.collection_id === this.props.collection.collection_id)
-        if(duplicate === undefined) this.props.addFavorite(this.props.collection);
+        let duplicate = this.props.favoriteCollections.find(fav => fav.collection_id === this.props.collection.collection_id)
+        if(duplicate === undefined) this.props.addFavoriteCollection(this.props.collection);
         else{
             console.log("Duplicate");
         }
     }
 
     deleteFromFavorite = () => {
-        this.props.deleteFavorite(this.props.collection.id);
+        this.props.deleteFavoriteCollection(this.props.collection.id);
     }
 
     render() {
@@ -27,7 +27,7 @@ class CollectionCard extends Component {
                                          : <button type="button" className="btn btn-danger add "  onClick = {this.addToFavorite}>&#9825;</button>
 
         return (
-            <div className="collection card col-lg-2 col-md-5 col-sm-12 my-4" >
+            <div className="collection card col-xl-2 col-lg-3 col-md-5 col-sm-12 my-4" >
                 <img className="card-img-top" alt={collection.title} src={collection.image_url} />
                 <div className="card-body">
                     <h5 className="card-title">{collection.title}</h5>
@@ -44,7 +44,7 @@ CollectionCard.propTypes = {
 }
 
 const mapStateToProps = state => ({
-    favorites: state.favorites
+    favoriteCollections: state.favoriteCollections
 })
 
-export default connect(mapStateToProps, {addFavorite, deleteFavorite })(CollectionCard);
+export default connect(mapStateToProps, {addFavoriteCollection, deleteFavoriteCollection })(CollectionCard);

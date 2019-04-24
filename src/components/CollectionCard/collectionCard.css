@@ -5,8 +5,13 @@
     font-size: 15px;
 }
 
-
 @media(min-width: 992px){
+    .collection{
+        margin-left: 2rem!important;
+    }
+}
+
+@media(min-width: 1200px){
     .collection{
         margin-left: 3rem!important;
     }

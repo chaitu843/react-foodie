@@ -10,10 +10,10 @@ class FavoritesSection extends Component {
     render() {
         return (
             <section className="my-5" id="favoritesSection">
-                <h2>Favorites</h2>
+                <h2>Favorite Collections</h2>
                 <hr />
                 <div className="row collections" id="favorites">
-                  {this.props.favorites.map(card => 
+                  {this.props.favoriteCollections.map(card => 
                       <CollectionCard key={card.collection_id} collection={card} favorite={true} />
                   )} 
                 </div>
@@ -28,7 +28,7 @@ class FavoritesSection extends Component {
 }
 
 const mapStateToProps = state => ({
-    favorites: state.favorites
+    favoriteCollections: state.favoriteCollections
 })
 
 export default connect(mapStateToProps, {fetchFavoriteCollections})(FavoritesSection);
