@@ -5,6 +5,7 @@ import rootReducer from './Reducers/index';
 
 const initialState = {
     collections: [],
+    favorites: []
 }
 
 const middleware = [thunk]

@@ -1,3 +1,24 @@
 {
- 
+  "favorites": [
+    {
+      "collection_id": 41,
+      "res_count": 12,
+      "image_url": "https://b.zmtcdn.com/data/collections/d0a0e32df636a9dfbf850f13a38aa834_1446629668_l.jpg",
+      "url": "https://www.zomato.com/bangalore/craft-beer?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+      "title": "Craft Beer",
+      "description": "The best house brews in town",
+      "share_url": "http://www.zoma.to/c-280/41",
+      "id": 1
+    },
+    {
+      "collection_id": 35,
+      "res_count": 15,
+      "image_url": "https://b.zmtcdn.com/data/collections/b5a5caace052be929d9829d32ae1c591_1441697242_l.jpg",
+      "url": "https://www.zomato.com/bangalore/ramen-restaurants?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+      "title": "Ramen",
+      "description": "The city's best ramen, and more!",
+      "share_url": "http://www.zoma.to/c-280/35",
+      "id": 2
+    }
+  ]
 }

@@ -1,0 +1,13 @@
+.add,.delete{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+}
+
+
+@media(min-width: 992px){
+    .resto{
+        margin-left: 3rem!important;
+    }
+}

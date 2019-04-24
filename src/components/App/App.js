@@ -5,11 +5,13 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import store from '../../store';
 
+import './App.css';
+
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
-import TopRatedSection from '../TopRatedSection/TopRatedSection';
-
-import './App.css';
+import RecommendedSection from '../RecommendedSection/RecommendedSection';
+import FavoritesSection from '../FavoritesSection/FavoritesSection';
+import SearchSection from '../SearchSection/SearchSection';
 
 
 class App extends Component {
@@ -22,7 +24,9 @@ class App extends Component {
           <div className="content">
             <Nav />
             <div className="mx-5">
-              <TopRatedSection />
+              <FavoritesSection />
+              <RecommendedSection />
+              <SearchSection />
             </div>
           </div>
         </>

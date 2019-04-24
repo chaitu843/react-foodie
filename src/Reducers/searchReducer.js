@@ -1,12 +1,13 @@
-import { FETCH_COLLECTIONS } from '../Actions/types';
+import { SEARCH_COLLECTIONS } from '../Actions/types';
 
 export default (state = [], action) => {
     switch (action.type) {
-        case FETCH_COLLECTIONS:
+        case SEARCH_COLLECTIONS:
             return [
                 ...state,
-                ...action.collections,
+                ...action.searchResults
             ]
+       
         default:
             return state;
     }
