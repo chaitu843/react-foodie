@@ -30,7 +30,7 @@ class CollectionCard extends Component {
             <div className="collection card col-xl-2 col-lg-3 col-md-5 col-sm-12 my-4" >
                 <img className="card-img-top" alt={collection.title} src={collection.image_url} />
                 <div className="card-body">
-                    <h5 className="card-title">{collection.title}</h5>
+                    <h5 className="card-title" style={{height: "3rem"}}>{collection.title}</h5>
                     <p className="card-text">{collection.description}</p>
                     {button}
                 </div>

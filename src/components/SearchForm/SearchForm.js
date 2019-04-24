@@ -22,6 +22,9 @@ class SearchForm extends Component {
     submitHandler = (e) => {
         e.preventDefault();
         this.props.searchCollections(this.state.searchQuery);
+        this.setState({
+            searchQuery: '',
+        })
     }
 
     render() {

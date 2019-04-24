@@ -25,10 +25,10 @@ class App extends Component {
           <div className="content">
             <Nav />
             <div className="mx-5">
-              <FavoritesSection />
-              <FavoriteRestaurantsSection />
               <RecommendedSection />
+              <FavoritesSection />
               <RestaurantsSection />
+              <FavoriteRestaurantsSection />
               <SearchSection />
             </div>
           </div>

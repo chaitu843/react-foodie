@@ -17,10 +17,10 @@ function Nav() {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#RecommendedSection">Recommended Collections</a>
+                        <a className="nav-link" href="#RecommendedSection">Collections</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#favoritesSection">Favorite Collections</a>
+                        <a className="nav-link" href="#restaurantsSection">Restaurants</a>
                     </li>
                 </ul>
                <SearchForm />
