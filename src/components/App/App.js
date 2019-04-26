@@ -10,15 +10,22 @@ import './App.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import RecommendedSection from '../RecommendedSection/RecommendedSection';
-import FavoritesSection from '../FavoritesSection/FavoritesSection';
 import SearchSection from '../SearchSection/SearchSection';
 import RestaurantsSection from '../RestaurantsSection/RestaurantsSection';
-import FavoriteRestaurantsSection from '../FavoriteRestaurantsSection/FavoriteRestaurantsSection';
 
-import Modal from '../Modal/Modal';
+
 
 class App extends Component {
 
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       
+    }
+    this.searchRef = React.createRef()
+  }
+  
   render() {
     return (
       <Provider store={store}>
@@ -27,12 +34,9 @@ class App extends Component {
           <div className="content">
             <Nav />
             <div className="mx-5">
+              <SearchSection style={{display: "none"}}/>
               <RestaurantsSection />
-              {/* {<RecommendedSection /> }
-              <FavoritesSection /> */}
-              {/* <FavoriteRestaurantsSection /> */}
-              {/* <SearchSection /> */}
-              {/* <Modal /> */}
+              <RecommendedSection /> 
             </div>
           </div>
         </>

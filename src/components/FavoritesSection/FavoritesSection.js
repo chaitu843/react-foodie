@@ -10,7 +10,7 @@ class FavoritesSection extends Component {
     render() {
         return (
             <section className="my-5" id="favoritesSection">
-                <h2>Favorite Collections</h2>
+                <h2 className="text-center">Favorite Collections</h2>
                 <hr />
                 <div className="row collections" id="favorites">
                   {this.props.favoriteCollections.map(card => 

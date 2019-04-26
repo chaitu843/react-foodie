@@ -4,13 +4,33 @@ import {connect} from 'react-redux';
 import {fetchCollectionsInCity} from '../../Actions/actions';
 import './RecommendedSection.css';
 
-import CollectionCard from '../CollectionCard/CollectionCard'
+import CollectionCard from '../CollectionCard/CollectionCard';
+import Modal from '../Modal/Modal';
+import FavoritesSection from '../FavoritesSection/FavoritesSection';
 
 class RecommendedSection extends Component {
+    constructor(props) {
+      super(props)
+    
+      this.modalRef = React.createRef();
+    }
+    clickHandler = (e) =>{
+        e.preventDefault();
+        this.modalRef.current.openModal();
+    }
     render() {
         return (
             <section className="my-5" id="RecommendedSection">
-                <h2>Recommended Collections</h2>
+                <h2 style={{
+                    display: "inline"
+                }}>Recommended Collections</h2>
+                  <span id="myBtn" title="favorites" onClick={this.clickHandler} style={{
+                    fontSize: "36px",
+                    float: "right"
+                }}> &#9829;</span>
+                <Modal ref={this.modalRef}>
+                    <FavoritesSection />
+                </Modal>
                 <hr />
                 <div className="row collections" id="RecommendedSection" style={{
                     display: "flex",

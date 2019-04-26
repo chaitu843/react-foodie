@@ -5,9 +5,10 @@
     left: 10%;
     top: 10%;
     width: 80%;
-    height: 80%;
+    max-height: 80%;
     background-color: rgba(0,0,0,0.4);
     overflow: auto;
+    outline: 9999px solid rgba(0,0,0,0.6);
 }
 
 .closeButtonStyle{
@@ -25,13 +26,13 @@
 }
 
 @media (min-width: 1024px){
-    .modalStyle .resto{
+    .modalStyle .resto, .modalStyle .collection{
         flex-basis: 40%;
     }
 }
 
 @media (min-width: 1440px){
-    .modalStyle .resto{
+    .modalStyle .resto, .modalStyle .collection{
         flex-basis: 27%;
     }
 }
