@@ -5,14 +5,24 @@
     font-size: 15px;
 }
 
-@media(min-width: 992px){
+.resto{
+    flex-basis: 100%;
+}
+
+@media (min-width: 768px){
     .resto{
-        margin-left: 2rem!important;
+        flex-basis: 40%;
     }
 }
 
-@media(min-width: 1200px){
+@media (min-width: 1024px){
     .resto{
-        margin-left: 3rem!important;
+        flex-basis: 27%;
+    }
+}
+
+@media (min-width: 1440px){
+    .resto{
+        flex-basis: 18%;
     }
 }

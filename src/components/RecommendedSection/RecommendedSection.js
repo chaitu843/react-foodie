@@ -12,7 +12,12 @@ class RecommendedSection extends Component {
             <section className="my-5" id="RecommendedSection">
                 <h2>Recommended Collections</h2>
                 <hr />
-                <div className="row collections" id="RecommendedSection">
+                <div className="row collections" id="RecommendedSection" style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    flexWrap: "wrap"
+                }}>
+                
                   {this.props.collections.map(card => 
                       <CollectionCard key={card.collection.collection_id} collection={card.collection} favorite={false} />
                   )} 

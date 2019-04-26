@@ -15,6 +15,8 @@ import SearchSection from '../SearchSection/SearchSection';
 import RestaurantsSection from '../RestaurantsSection/RestaurantsSection';
 import FavoriteRestaurantsSection from '../FavoriteRestaurantsSection/FavoriteRestaurantsSection';
 
+import Modal from '../Modal/Modal';
+
 class App extends Component {
 
   render() {
@@ -25,11 +27,12 @@ class App extends Component {
           <div className="content">
             <Nav />
             <div className="mx-5">
-              <RecommendedSection />
-              <FavoritesSection />
               <RestaurantsSection />
-              <FavoriteRestaurantsSection />
-              <SearchSection />
+              {/* {<RecommendedSection /> }
+              <FavoritesSection /> */}
+              {/* <FavoriteRestaurantsSection /> */}
+              {/* <SearchSection /> */}
+              {/* <Modal /> */}
             </div>
           </div>
         </>

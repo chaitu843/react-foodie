@@ -27,8 +27,8 @@ class CollectionCard extends Component {
                                          : <button type="button" className="btn btn-danger add "  onClick = {this.addToFavorite}>&#9825;</button>
 
         return (
-            <div className="collection card col-xl-2 col-lg-3 col-md-5 col-sm-12 my-4" >
-                <img className="card-img-top" alt={collection.title} src={collection.image_url} />
+            <div className="collection card my-4" >
+                <img className="card-img-top" alt={collection.title} src={collection.image_url} height="187px" />
                 <div className="card-body">
                     <h5 className="card-title" style={{height: "3rem"}}>{collection.title}</h5>
                     <p className="card-text">{collection.description}</p>

@@ -5,14 +5,24 @@
     font-size: 15px;
 }
 
-@media(min-width: 992px){
+.collection{
+    flex-basis: 100%;
+}
+
+@media (min-width: 768px){
     .collection{
-        margin-left: 2rem!important;
+        flex-basis: 40%;
     }
 }
 
-@media(min-width: 1200px){
+@media (min-width: 1024px){
     .collection{
-        margin-left: 3rem!important;
+        flex-basis: 27%;
+    }
+}
+
+@media (min-width: 1440px){
+    .collection{
+        flex-basis: 18%;
     }
 }

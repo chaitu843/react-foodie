@@ -1,0 +1,37 @@
+.modalStyle{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0,0,0,0.4);
+    overflow: auto;
+}
+
+.closeButtonStyle{
+    color: red;
+    font-size: 18px;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.modalContentStyle {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888
+}
+
+@media (min-width: 1024px){
+    .modalStyle .resto{
+        flex-basis: 40%;
+    }
+}
+
+@media (min-width: 1440px){
+    .modalStyle .resto{
+        flex-basis: 27%;
+    }
+}

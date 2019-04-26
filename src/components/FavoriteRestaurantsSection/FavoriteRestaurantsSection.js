@@ -9,8 +9,8 @@ import RestaurantCard from '../RestaurantCard/RestaurantCard'
 class FavoriteRestaurantsSection extends Component {
     render() {
         return (
-            <section className="my-5" id="favoritesSection">
-                <h2>Favorite Restaurants</h2>
+            <section className="my-3" id="favoritesSection">
+                <h2 className = "text-center">Favorite Restaurants</h2>
                 <hr />
                 <div className="row collections" id="favorites">
                   {this.props.favoriteRestaurants.map(resto => 
