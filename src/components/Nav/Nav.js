@@ -10,19 +10,6 @@ function Nav() {
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
-                    <li className="nav-item">
-                        <a className="nav-link" href="#home">Home
-                    <span className="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#RecommendedSection">Collections</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#restaurantsSection">Restaurants</a>
-                    </li>
-                </ul>
                <SearchForm />
             </div>
         </nav>

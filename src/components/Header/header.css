@@ -8,3 +8,12 @@ header{
     z-index: 2;
     margin-bottom: 12px;
 }
+
+.brand{
+    color: white;
+    text-decoration: none;
+    transition: transform 0.7s;
+}
+.brand:hover{
+    transform: scale(1.1);
+}

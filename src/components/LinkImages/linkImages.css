@@ -1,0 +1,30 @@
+.linkContainer{
+    position: relative;
+    margin-bottom: 3rem;
+}
+.linkImage {
+    border-radius: 3rem;
+    transition: transform .3s;
+}
+
+.linkContainer:hover .linkImage{
+    transform: scale(1.2);
+    opacity: 0.3;
+}
+
+.middle{
+    position: absolute;
+    top: 45%;
+    left: 1.5rem;
+    opacity: 0;
+}
+
+.linkContainer:hover .middle{
+    opacity: 1;
+}
+
+@media(max-width: 780px){
+    .linkContainer{
+        flex-basis: 40%;
+    }
+}
