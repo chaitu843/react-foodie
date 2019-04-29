@@ -10,7 +10,6 @@ import './App.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import RecommendedSection from '../RecommendedSection/RecommendedSection';
-import SearchSection from '../SearchSection/SearchSection';
 import RestaurantsSection from '../RestaurantsSection/RestaurantsSection';
 
 
@@ -34,7 +33,6 @@ class App extends Component {
           <div className="content">
             <Nav />
             <div className="mx-5">
-              <SearchSection style={{display: "none"}}/>
               <RestaurantsSection />
               <RecommendedSection /> 
             </div>

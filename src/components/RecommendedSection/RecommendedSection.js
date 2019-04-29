@@ -24,10 +24,23 @@ class RecommendedSection extends Component {
                 <h2 style={{
                     display: "inline"
                 }}>Recommended Collections</h2>
+                  <p style={{
+                      margin: "0px",
+                      float: "right",
+                      position: "relative"
+                  }}>
                   <span id="myBtn" title="favorites" onClick={this.clickHandler} style={{
                     fontSize: "36px",
-                    float: "right"
                 }}> &#9829;</span>
+                <span style={{
+                        fontSize: "14px",
+                        bottom: "0.25rem",
+                        left: "1.1rem",
+                        position: "absolute",
+                        color: "red",
+                        fontWeight: "bold"
+                }}>{this.props.count}</span>
+                  </p>
                 <Modal ref={this.modalRef}>
                     <FavoritesSection />
                 </Modal>
@@ -53,6 +66,7 @@ class RecommendedSection extends Component {
 }
 
 const mapStateToProps = state => ({
-    collections: state.collections
+    collections: state.collections,
+    count: state.favoriteCollections.length
 })
 export default connect(mapStateToProps, {fetchCollectionsInCity, })(RecommendedSection);

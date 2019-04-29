@@ -23,10 +23,23 @@ class RestaurantsSection extends Component {
                 <h2 style={{
                     display: "inline"
                 }}>Restaurants around you</h2>
-                <span id="myBtn" title="favorites" onClick={this.clickHandler} style={{
+               <p style={{
+                      margin: "0px",
+                      float: "right",
+                      position: "relative"
+                  }}>
+                  <span id="myBtn" title="favorites" onClick={this.clickHandler} style={{
                     fontSize: "36px",
-                    float: "right"
                 }}> &#9829;</span>
+                <span style={{
+                        fontSize: "14px",
+                        bottom: "0.25rem",
+                        left: "1.1rem",
+                        position: "absolute",
+                        color: "red",
+                        fontWeight: "bold"
+                }}>{this.props.count}</span>
+                  </p>
                 <Modal ref={this.modalRef}>
                     <FavoriteRestaurantsSection />
                 </Modal>
@@ -51,6 +64,7 @@ class RestaurantsSection extends Component {
 
 
 const mapStateToProps = state => ({
-    restaurants: state.restaurants
+    restaurants: state.restaurants,
+    count: state.favoriteRestaurants.length
 })
 export default connect(mapStateToProps, { fetchRestaurantsInCity, })(RestaurantsSection);

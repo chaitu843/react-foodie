@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 import './Modal.css';
 
@@ -19,17 +20,18 @@ class Modal extends Component {
 
     closeModal = (e) => {
         this.modalRef.current.style.display = "none";
+        //e.target.
     }
 
     render() {
 
-        return (
+        return ReactDOM.createPortal(
             <div id="myModal" className="modalStyle" ref={this.modalRef}>
                 <div className="modalContentStyle" >
                     <span className="closeButtonStyle" onClick={this.closeModal}>&#10007;</span>
                     <div>{this.props.children}</div>
                 </div>
-            </div>
+            </div>, document.getElementById('modal-root')
         )
     }
 }
