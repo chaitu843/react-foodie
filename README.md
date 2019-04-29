@@ -5,6 +5,14 @@
 
 3. Used Refs, React Portals, Routes and Links --> Related to React
 
+4. Used children props for re-usage of Modal component
+
+5. Future Steps --> 
+
+    Try integrating with mongodb instead of json-server
+
+    Can Work on Load More Part
+
 ========================================================================================================================================================================
 
 ## Simple Steps to go on with your application --
