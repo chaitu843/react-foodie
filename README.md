@@ -1,4 +1,12 @@
 ========================================================================================================================================================================
+## Project Repo - 
+    https://github.com/chaitu843/react-foodie
+
+# Branch - foodie-json-server
+
+    Contains the code built on json-server
+
+========================================================================================================================================================================
 1. Started with React-Redux BoilerPlate
 
 2. Created Modals on own
@@ -9,7 +17,7 @@
 
 5. Future Steps --> 
 
-    Try integrating with mongodb instead of json-server
+    Try integrating with mongodb instead of json-server and then use mamp or heroku to deploy it
 
     Can Work on Load More Part
 
