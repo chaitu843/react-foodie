@@ -1,4 +1,16 @@
 ========================================================================================================================================================================
+
+## Deployment in Heroku
+
+1. Cannot resolve 'react-router-dom' 
+    All dependencies required at production should fall under dependencies category, not under dev dependencies
+
+2. Relative imports outside of src/ are not supported. 
+    Moved bootstrap.min.css inside src folder.
+    This is a restriction put by create-react-app using ModuleScopePlugin.
+    If you opt to remove that, do "EJECT" operation, only if you are ready to configure the application all by yourself, starting from webpack
+
+========================================================================================================================================================================
 ## Project Repo - 
     https://github.com/chaitu843/react-foodie
 
