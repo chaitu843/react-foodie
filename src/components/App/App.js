@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import store from '../../store';
 import '../../assets/123.jpg'
