@@ -6,6 +6,7 @@ app.use(express.static('build'));
 
 app.use(express.json());
 
+const port = process.env.port || 5000;
 const FavoriteCollectionRoutes = require('./Routes/FavoriteCollectionRoutes');
 const FavoriteRestaurantRoutes = require('./Routes/FavoriteRestaurantRoutes');
 
@@ -29,6 +30,6 @@ app.get('*', function (req, res) {
   res.sendFile(path.resolve(__dirname, '../build/index.html'));
   res.end();
 });
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log('Listening to port 5000');
 })

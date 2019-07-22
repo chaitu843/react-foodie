@@ -24,6 +24,9 @@
     This is a restriction put by create-react-app using ModuleScopePlugin.
     If you opt to remove that, do "EJECT" operation, only if you are ready to configure the application all by yourself, starting from webpack
 
+3. It needs start script from package.json
+   And port number provided by heroku should be used, if using a server
+
 ========================================================================================================================================================================
 ## Project Repo - 
     https://github.com/chaitu843/react-foodie
