@@ -10,8 +10,10 @@ const port = process.env.port || 5000;
 const FavoriteCollectionRoutes = require('./Routes/FavoriteCollectionRoutes');
 const FavoriteRestaurantRoutes = require('./Routes/FavoriteRestaurantRoutes');
 
+const localMongoString = `mongodb://localhost:27017/test`;
+const herokuMongoString = `mongodb://Chaitu:chaitu@843@ds349587.mlab.com:49587/heroku_4fjmbcqd`
 // Connecting to MongoDB using mongoose
-mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true,}).then(() => {
+mongoose.connect(herokuMongoString, {useNewUrlParser: true,}).then(() => {
   console.log('Connected to Mongo');
 }).catch(err => {
   console.log(err);
