@@ -18,7 +18,7 @@ export const fetchCollectionsInCity = () => dispatch => {
 }                             // Giving city_id as 4 --> bangalore  --> HardCoding
 
 export const fetchFavoriteCollections = () => dispatch => {
-    fetch("http://localhost:3001/favoriteCollections",{
+    fetch("/favoriteCollection",{
         method: 'GET',
         credentials: "same-origin",
     })
@@ -30,7 +30,7 @@ export const fetchFavoriteCollections = () => dispatch => {
 }
 
 export const addFavoriteCollection = (data) => dispatch => {
-    fetch("http://localhost:3001/favoriteCollections",{
+    fetch("/favoriteCollection",{
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, cors, *same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -51,7 +51,7 @@ export const addFavoriteCollection = (data) => dispatch => {
 }
 
 export const deleteFavoriteCollection = (id) => dispatch => {
-    fetch(`http://localhost:3001/favoriteCollections/${id}`,{
+    fetch(`/favoriteCollection/${id}`,{
         method: "DELETE", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, cors, *same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -59,7 +59,7 @@ export const deleteFavoriteCollection = (id) => dispatch => {
         redirect: "follow", // manual, *follow, error
         referrer: "no-referrer", // no-referrer, *client
     })
-    .then(resp =>  dispatch({
+    .then( () =>  dispatch({
         type: DELETE_FAVORITE_COLLECTION,
         id: id
     }))
@@ -80,7 +80,7 @@ export const fetchRestaurantsInCity = () => dispatch => {
 }                         // Entity_id as 4 --> bangalore --> HardCoded
 
 export const fetchFavoriteRestaurants = () => dispatch => {
-    fetch("http://localhost:3001/favoriteRestaurants",{
+    fetch("/favoriteRestaurant",{
         method: 'GET',
         credentials: "same-origin",
     })
@@ -92,7 +92,7 @@ export const fetchFavoriteRestaurants = () => dispatch => {
 }
 
 export const addFavoriteRestaurant = (data) => dispatch => {
-    fetch("http://localhost:3001/favoriteRestaurants",{
+    fetch("/favoriteRestaurant",{
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, cors, *same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -113,7 +113,7 @@ export const addFavoriteRestaurant = (data) => dispatch => {
 }
 
 export const deleteFavoriteRestaurant = (id) => dispatch => {
-    fetch(`http://localhost:3001/favoriteRestaurants/${id}`,{
+    fetch(`/favoriteRestaurant/${id}`,{
         method: "DELETE", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, cors, *same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached

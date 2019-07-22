@@ -13,7 +13,7 @@ export default (state = [], action) => {
                 action.favorite
             ]
         case DELETE_FAVORITE_COLLECTION:
-            return state.filter(favorite => favorite.id !== action.id);
+            return state.filter(favorite => favorite._id !== action.id);
         default:
             return state;
     }

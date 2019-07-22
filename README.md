@@ -1,4 +1,16 @@
-========================================================================================================================================================================
+=====================================================================================================================================================
+
+## Integrating with server on same domain --> server Directory
+
+1. Dependenices Required --> mongoose as ODM
+                         --> express for server
+                         --> nodemon as dev-server
+
+2. Serve the html file provided by react, statically for '/' mapping. express.static() middleware needs to be used.
+
+3. Just creating requests and sending responses need a little attention.
+
+===================
 
 ## Deployment in Heroku
 

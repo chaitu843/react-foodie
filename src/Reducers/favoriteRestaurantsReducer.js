@@ -13,7 +13,7 @@ export default (state = [], action) => {
                 action.favoriteRestaurant
             ]
         case DELETE_FAVORITE_RESTAURANT:
-            return state.filter(favorite => favorite.id !== action.id);
+            return state.filter(favorite => favorite._id !== action.id);
         default:
             return state;
     }

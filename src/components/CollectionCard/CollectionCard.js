@@ -17,7 +17,7 @@ class CollectionCard extends Component {
     }
 
     deleteFromFavorite = () => {
-        this.props.deleteFavoriteCollection(this.props.collection.id);
+        this.props.deleteFavoriteCollection(this.props.collection._id);
     }
 
     render() {

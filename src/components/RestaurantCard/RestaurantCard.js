@@ -8,7 +8,7 @@ import './restaurantCard.css';
 export class RestaurantCard extends Component {
 
     addToFavorite = () => {
-        let duplicate = this.props.favoriteRestaurants.find(fav => fav.id === this.props.restaurant.id)
+        let duplicate = this.props.favoriteRestaurants.find(fav => fav._id === this.props.restaurant._id)
         if(duplicate === undefined) this.props.addFavoriteRestaurant(this.props.restaurant);
         else{
             console.log("Duplicate");
@@ -16,7 +16,9 @@ export class RestaurantCard extends Component {
     }
 
     deleteFromFavorite = () => {
-        this.props.deleteFavoriteRestaurant(this.props.restaurant.id);
+        console.log('from deleteFromFavorite');
+        console.log(this.props.restaurant);
+        this.props.deleteFavoriteRestaurant(this.props.restaurant._id);
     }
 
     render() {
