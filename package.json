@@ -14,11 +14,12 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && npm run prod",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "nodemon server/server.js"
+    "server": "nodemon server/server.js",
+    "prod" : "node server/server.js"
   },
   "eslintConfig": {
     "extends": "react-app"

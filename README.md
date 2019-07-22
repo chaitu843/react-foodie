@@ -9,7 +9,9 @@
 2. Serve the html file provided by react, statically for '/' mapping. express.static() middleware needs to be used.
 
 3. Just creating requests and sending responses need a little attention.
-
+                            
+                            --> Whole MERN STACK Application is DONE!
+                                With both client and server in same domain
 ===================
 
 ## Deployment in Heroku
