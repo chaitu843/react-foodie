@@ -12,6 +12,10 @@
                             
                             --> Whole MERN STACK Application is DONE!
                                 With both client and server in same domain
+
+4. Commented out the REDUX dev tools extension used
+
+5. 
 ===================
 
 ## Deployment in Heroku
