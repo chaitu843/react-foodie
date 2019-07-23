@@ -11,7 +11,7 @@ const FavoriteCollectionRoutes = require('./Routes/FavoriteCollectionRoutes');
 const FavoriteRestaurantRoutes = require('./Routes/FavoriteRestaurantRoutes');
 
 const localMongoString = `mongodb://localhost:27017/test`;
-const mongoAtlasString = `mongodb+srv://Chaitu:chiatu@843@cluster0-am2rc.mongodb.net/test?retryWrites=true&w=majority`
+const mongoAtlasString = `mongodb+srv://Chaitu:chaitu@843@cluster0-am2rc.mongodb.net/test?retryWrites=true&w=majority`
 // Connecting to MongoDB using mongoose
 mongoose.connect(mongoAtlasString, {
   auth: {
