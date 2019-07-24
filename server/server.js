@@ -6,7 +6,7 @@ app.use(express.static('build'));
 
 app.use(express.json());
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 const FavoriteCollectionRoutes = require('./Routes/FavoriteCollectionRoutes');
 const FavoriteRestaurantRoutes = require('./Routes/FavoriteRestaurantRoutes');
 
